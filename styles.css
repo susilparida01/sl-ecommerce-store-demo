@@ -1,0 +1,128 @@
+/* Global Styles */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif; 
+  background: #f9fafc; 
+}
+
+/* Header */
+header {
+  background-color: #0078D7;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Product */
+.product-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.product-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 8px gray;
+  width: 250px;
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.price {
+  color: green;
+  font-weight: bold;
+}
+
+button {
+  background-color: #0078D7;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+/* Checkout Form */
+.checkout-section {
+  background: white;
+  width: 60%;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px lightgray;
+}
+
+.checkout-section input,
+.checkout-section select,
+.checkout-section textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+footer a {
+  color: lightblue;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+

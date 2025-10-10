@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartShop - Online Store</title>
+
+    <!--External CSS-->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <!--Header Section-->
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="SmartShop Logo">
+            <h1>SmartShop</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#cart">Cart(<span id="cart-count">0</span>)</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Product Listing Setion-->
+    <section id="products" class="product-container">
+        <div class="product-card">
+            <img src="images/laptop.jpg" alt="Laptop">
+            <h3>Dell Inspiron Laptop</h3>
+            <p class="price">₹65,000</p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/smartwatch.jpg" alt="Smartwatch">
+            <h3>Noise Smartwatch</h3>
+            <p class="price">₹4,999</p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/headphones.jpg" alt="Headphones">
+            <h3>JBL Headphones</h3>
+            <p class="price">₹2,999</p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+
+    </section>
+
+    <!--Checkout Form-->
+    <section id="cart" class="checkout-section">
+        <h2>Checkout Form</h2>
+        <form id="checkout-form" onsubmit="return validateForm()">
+            <label for="name">Full Name: </label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="email">Email: </label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="address">Shipping Address: </label>
+            <textarea name="" id="address" rows="3" placeholder="Enter your address" required></textarea>
+
+            <label for="payment">Payement Method: </label>
+            <select id="payment" required>
+                <option value="">--Select--</option>
+                <option value="credit">Credit Card</option>
+                <option value="debit">Debit Card</option>
+                <option value="upi">UPI</option>
+                <option value="cod">Cash on Delivery</option>
+            </select>
+
+            <button type="submit">Place Order</button>
+        </form>
+    </section>
+
+    <!--Footer-->
+    <footer id="contact">
+        <p>Email: support@smartshop.com | Contact: +91-9876543210</p>
+        <p>Folow us on
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </p>
+        <p>2025 SmartShop. All Rights Reserved</p>
+
+    </footer>
+    
+    <!-- External JS -->
+     <script src="script.js"></script>
+</body>
+</html>

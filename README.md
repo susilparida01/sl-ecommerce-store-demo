@@ -56,3 +56,6 @@ Create a new directory for your project and add an `images/` folder inside it to
 
 ## 🚀 How to Run
 Simply open `index.html` in any modern web browser to view the application.
+
+### Screenshot
+![alt text](image.png)
